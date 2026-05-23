@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>L.Tiyo - Portfolio</title>
+
+        <link rel="stylesheet" href="Style/style.css" type="text/css">
+        <link rel="shortcut icon" href="Images/logo.jpeg" type="image/x-icon">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <header class = "header">
+            <div class="logo-area">
+                <img src="Images/logo.jpeg" alt="Tiyo Lindokuhle Logo" class="logo">
+                <h1>Tiyo Lindokuhle</h1>
+            </div>
+
+            <div class="loader">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>                
+            </nav>
+        </header>
+
+        <main>
+            <!--Home Section-->
+            <section id="home" class="hero">
+                <div class="hero-content">
+                    <img src="Images/profile.jpg" alt="Profile photo of Mr L.Tiyo" class="profile-img">
+                    <h1>Hi, I'm <span class="accent">Tiyo Lindokuhle.</span></h1>
+                    <p class="tagline">Aspiring Web Developer, Designer & Computer Scientist.</p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn primary">View My Work</a>
+                        <a href="#contact" class="btn secondary">Contact Me</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--About Section-->
+            <section id="about" class="about">
+                  <div class="about-container">
+                    <h2>About <span class="accent">Me</span></h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>
+                                I'm Tiyo Lindokuhle, an aspiring <span class="accent">Web Developer</span>, 
+                                <span class="accent">Designer</span>, and <span class="accent">Computer Scientist</span> 
+                                passionate about building clean, interactive, and user-focused web experiences.
+                            </p>
+                            <p>I enjoy turning ideas into reality with code. Right now I'm focused on
+                               learning full-stack development, UI/UX design, and working on <a href="#projects" class="inline-link">projects </a> that
+                               solve real problems.
+                            </p>
+                            
+                            <div class="skills">
+                                <span class="skill-badge" data-code="&lt;!DOCTYPE html&gt;&#10;&lt;html&gt;&#10;  &lt;h1&gt;Hello World&lt;/h1&gt;&#10;&lt;/html&gt;">HTML</span>
+  
+                                <span class="skill-badge" data-code="body {&#10;  background: #000;&#10;  color: #00ff88;&#10;}">CSS</span>
+  
+                                <span class="skill-badge" data-code="const greet = () =&gt; {&#10;  console.log('Hello World');&#10;};">JavaScript</span>
+  
+                                <span class="skill-badge" data-code="Console.WriteLine(&quot;Hello World&quot;);">C#</span>
+  
+                                <span class="skill-badge" data-code="System.out.println(&quot;Hello World&quot;);">Java</span>
+  
+                                <span class="skill-badge" data-code="disp('Hello World')">Matlab</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--Projects Section-->
+            <section id="projects" class="projects">
+                <div class="projects-container">
+                    <h2>My <span class="accent">Projects</span></h2>
+                    <p class="section-subtitle">A few things I've built recently</p>
+                    <div class="project-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Images/project1.2.png" alt="Book a Trip">
+                            </div>
+                            
+                            <div class="project-info">
+                                <h3>Book a Trip</h3>
+                                <p>Travel booking app built with React + Firebase. Users can search flights and save trips.</p>
+                                <div class="project-links">
+                                    <a href="https://s232175012.github.io/teocode-p1/" target="_blank" class="view-btn">View Project ↗</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Images/project2.2.png" alt="Carnival Games">
+                            </div>
+
+                            <div class="project-info">
+                                <h3>Carnival Games</h3>
+                                <p>Browser mini-games using vanilla JS + Canvas. Clicker, ring toss, and high score tracking.</p>
+                                <div class="project-links">
+                                    <a href="https://s232175012.github.io/teocode-p2/" target="_blank" class="view-btn">View Project ↗</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Images/project3.2.jpeg" alt="Recipe App">
+                            </div>
+                            
+                            <div class="project-info">
+                                <h3>Recipe App</h3>
+                                <p>Recipe finder with search + filters. Built with Next.js and Spoonacular API.</p>
+                                <div class="project-links">
+                                    <a href="https://s232175012.github.io/teocode-p3/" target="_blank" class="view-btn">View Project ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Contact Section-->
+            <section id="contact" class="contact">
+                <div class="contact-container">
+                    <h2>Get In <span class="accent">Touch</span></h2>
+                    <p class="section-subtitle">Have a project or just want to chat? Drop me a message.</p>
+
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">Send Message</button>
+                        <p id="formStatus"></p>
+                    </form>
+                    
+                    <div class="contact-links">
+                        <div class="contact-links">
+                            <a href="https://wa.me/27782836043" target="_blank" class="contact-link whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+
+                            <a href="tel:+27782836043" class="contact-link call">
+                                <i class="fas fa-phone"></i>
+                                <span>Call Me</span>
+                            </a>
+
+                            <a href="mailto:s232175012@mandela.ac.za" class="contact-link email">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 Tiyo Lindokuhle. Built with HTML & CSS.</p>
+        </footer>
+    
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="Script/javascript.js" type="text/javascript"></script>
+    </body>
+</html>
